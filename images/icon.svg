@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#211f27"/>
+      <stop offset="1" stop-color="#121116"/>
+    </linearGradient>
+    <linearGradient id="nib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd866"/>
+      <stop offset="1" stop-color="#fc9867"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#tile)"/>
+  <rect x="88" y="128" width="210" height="34" rx="17" fill="#ff6188"/>
+  <rect x="88" y="192" width="154" height="26" rx="13" fill="#fc9867"/>
+  <rect x="88" y="250" width="186" height="18" rx="9" fill="#5c5963"/>
+  <rect x="88" y="298" width="132" height="18" rx="9" fill="#5c5963"/>
+  <rect x="88" y="346" width="96" height="18" rx="9" fill="#5c5963"/>
+  <g transform="translate(352 262) rotate(-135)">
+    <path d="M0,-158 L64,-24 Q66,44 0,92 Q-66,44 -64,-24 Z" fill="url(#nib)"/>
+    <line x1="0" y1="-150" x2="0" y2="-6" stroke="#15141a" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="0" cy="4" r="15" fill="#15141a"/>
+  </g>
+</svg>

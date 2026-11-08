@@ -55,6 +55,10 @@ Orca opens Markdown files in Source first, and a plugin cannot change that. Clic
 - **No raw HTML.** HTML in the Markdown shows as text.
 - **Agent edits.** When an agent writes the file while you type, the preview keeps both changes if they touch different lines. If both change the same lines, the agent's version wins.
 
+## What's new in 1.0.2
+
+- A plugin icon: colored heading lines with a pen nib. Its source is `images/icon.svg`.
+
 ## What's new in 1.0.1
 
 - The plugin page now says how to open the preview: click the first icon in the view toggle.
