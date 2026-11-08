@@ -55,6 +55,11 @@ Orca opens Markdown files in Source first, and a plugin cannot change that. Clic
 - **No raw HTML.** HTML in the Markdown shows as text.
 - **Agent edits.** When an agent writes the file while you type, the preview keeps both changes if they touch different lines. If both change the same lines, the agent's version wins.
 
+## What's new in 1.0.4
+
+- Security update: Mermaid 12.3.0 and markdown-it 15.0.3 fix all known advisories in the earlier versions, including XSS in diagram labels and documents that froze the editor.
+- Mermaid now uses the smaller tiny build. Mindmap and architecture diagrams, and math in diagram labels, are no longer supported. All other diagram types work as before.
+
 ## What's new in 1.0.3
 
 - Tables have a new look: a full grid with lines between all cells, a grey header band and yellow column names.
@@ -85,7 +90,7 @@ orca plugin shot local.better-markdown-preview --editor "$PWD/samples/tables.md"
 
 `editor/main.ts` starts the editor, keeps the file in sync with Orca and owns the zoom control. `editor/live.ts` decides which parts of the document show rendered and which show as Markdown. `editor/render.ts` draws tables, code blocks, front matter and diagrams. `editor/merge.ts` combines your edits with outside changes. `editor/reader.css` holds every color and size.
 
-`lib/` holds markdown-it 14.1.0, highlight.js 11.11.1, Mermaid 11.4.1 and a CodeMirror 6 bundle. Run `scripts/build-codemirror.sh` to rebuild `lib/codemirror.mjs` from `scripts/codemirror-entry.js`.
+`lib/` holds markdown-it 15.0.3, highlight.js 11.11.1, Mermaid 12.3.0 (the tiny build) and a CodeMirror 6 bundle. Run `scripts/build-codemirror.sh` to rebuild `lib/codemirror.mjs` from `scripts/codemirror-entry.js`.
 
 ## License
 

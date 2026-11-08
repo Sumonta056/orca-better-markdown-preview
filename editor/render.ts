@@ -47,7 +47,7 @@ const diagrams = new Map<string, string>()
 function loadMermaid(): Promise<void> {
   mermaidReady ??= new Promise((resolve, reject) => {
     const script = document.createElement('script')
-    script.src = '../lib/mermaid.min.js'
+    script.src = '../lib/mermaid.tiny.js'
     script.onload = () => resolve()
     script.onerror = () => reject(new Error('mermaid failed to load'))
     document.head.append(script)

@@ -2,7 +2,7 @@
 
 Better Markdown Preview bundles the files below. Each keeps its own license.
 
-## markdown-it 14.1.0
+## markdown-it 15.0.3
 
 `lib/markdown-it.min.js`
 
@@ -67,9 +67,9 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
-## Mermaid 11.4.1
+## Mermaid 12.3.0 (tiny build)
 
-`lib/mermaid.min.js`
+`lib/mermaid.tiny.js`, the `@mermaid-js/tiny` build
 
 ```
 The MIT License (MIT)

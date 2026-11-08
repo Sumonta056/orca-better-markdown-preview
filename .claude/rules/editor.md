@@ -33,4 +33,4 @@ paths:
 
 ## Libraries
 
-`lib/codemirror.mjs` is generated. Change `scripts/codemirror-entry.js` and run `scripts/build-codemirror.sh`; never edit the bundle. Pinned versions live in the script; update `THIRD-PARTY-NOTICES.md` when a version changes. The other files in `lib/` are copied from npm builds: markdown-it 14.1.0 (`dist/markdown-it.min.js`), highlight.js 11.11.1 (`@highlightjs/cdn-assets` `highlight.min.js`) and Mermaid 11.4.1 (`dist/mermaid.min.js`).
+`lib/codemirror.mjs` is generated. Change `scripts/codemirror-entry.js` and run `scripts/build-codemirror.sh`; never edit the bundle. Pinned versions live in the script; update `THIRD-PARTY-NOTICES.md` when a version changes. The other files in `lib/` are copied from npm builds: markdown-it 15.0.3 (`dist/browser/markdown-it.umd.min.js`, saved as `markdown-it.min.js`), highlight.js 11.11.1 (`@highlightjs/cdn-assets` `highlight.min.js`) and Mermaid 12.3.0 from `@mermaid-js/tiny` (`dist/mermaid.tiny.js`). The tiny build leaves out mindmap and architecture diagrams and KaTeX; the full build is twice the size, and the catalog holds large plugins for review.
