@@ -1,0 +1,50 @@
+{
+  "$schema": "https://raw.githubusercontent.com/stablyai/orca/main/docs/schemas/plugins/orca-plugin.v2.schema.json",
+  "manifestVersion": 2,
+  "id": "better-markdown-preview",
+  "name": "Better Markdown Preview",
+  "version": "1.0.0",
+  "description": "Read and edit Markdown in one live preview: colored headings, organized lists, clean tables, highlighted code, callouts, front matter and Mermaid diagrams.",
+  "author": {
+    "name": "Sumonta Saha Mridul",
+    "url": "https://github.com/Sumonta056"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/Sumonta056/orca-better-markdown-preview",
+  "engines": {
+    "orca": ">=1.4.248"
+  },
+  "execution": "sandboxed-ui",
+  "pluginApi": 1,
+  "cover": {
+    "path": "images/cover.png",
+    "alt": "Better Markdown Preview showing colored headings, bullets with a shape per level, a tip callout and a task list"
+  },
+  "screenshots": [
+    {
+      "path": "images/tables.png",
+      "alt": "A table with a compact header and a TypeScript code block with syntax colors and a copy button",
+      "caption": "Tables, code and callouts"
+    },
+    {
+      "path": "images/diagram.png",
+      "alt": "A front matter card, a Mermaid flowchart and a numbered list",
+      "caption": "Front matter and Mermaid diagrams"
+    }
+  ],
+  "contributes": {
+    "customEditors": [
+      {
+        "id": "better-markdown-preview",
+        "title": "Preview",
+        "extensions": [
+          ".md",
+          ".markdown",
+          ".mdx"
+        ],
+        "entry": "editor/index.html",
+        "frame": "isolated"
+      }
+    ]
+  }
+}
