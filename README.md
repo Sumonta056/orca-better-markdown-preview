@@ -55,6 +55,11 @@ Orca opens Markdown files in Source first, and a plugin cannot change that. Clic
 - **No raw HTML.** HTML in the Markdown shows as text.
 - **Agent edits.** When an agent writes the file while you type, the preview keeps both changes if they touch different lines. If both change the same lines, the agent's version wins.
 
+## What's new in 1.0.1
+
+- The plugin page now says how to open the preview: click the first icon in the view toggle.
+- A new cover that fits the wide crop on the plugin page.
+
 ## What's new in 1.0.0
 
 - First release.
@@ -64,7 +69,7 @@ Orca opens Markdown files in Source first, and a plugin cannot change that. Clic
 ```sh
 orca plugin check .
 orca plugin dev load "$PWD"
-orca plugin shot local.better-markdown-preview --editor Test/cover.md --width 1600 --height 1000
+orca plugin shot local.better-markdown-preview --editor "$PWD/samples/tables.md" --width 1600 --height 1000
 ```
 
 `editor/main.ts` starts the editor, keeps the file in sync with Orca and owns the zoom control. `editor/live.ts` decides which parts of the document show rendered and which show as Markdown. `editor/render.ts` draws tables, code blocks, front matter and diagrams. `editor/merge.ts` combines your edits with outside changes. `editor/reader.css` holds every color and size.

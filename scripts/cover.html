@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face {
+    font-family: 'Figtree';
+    src: url('../fonts/figtree-latin-wght-normal.woff2') format('woff2');
+    font-weight: 300 900;
+  }
+  :root {
+    --bg: #0d0e12;
+    --fg: #e3e1e4;
+    --muted: #8b888f;
+    --pink: #ff6188;
+    --orange: #fc9867;
+    --green: #a9dc76;
+    --border: #2a2a31;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1600px; height: 1000px; overflow: hidden; }
+  body {
+    background:
+      radial-gradient(900px 420px at 78% 50%, rgba(255, 97, 136, 0.10), transparent 70%),
+      radial-gradient(700px 380px at 15% 50%, rgba(169, 220, 118, 0.06), transparent 70%),
+      var(--bg);
+    color: var(--fg);
+    font-family: 'Figtree', sans-serif;
+    display: grid;
+    place-items: center;
+  }
+  .band {
+    width: 1460px;
+    height: 360px;
+    display: grid;
+    grid-template-columns: 560px 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  h1 {
+    font-size: 58px;
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: var(--pink);
+  }
+  h1 span { color: var(--orange); }
+  .tagline {
+    margin-top: 16px;
+    font-size: 23px;
+    line-height: 1.4;
+    color: var(--muted);
+  }
+  .tagline em { color: var(--green); font-style: italic; }
+  .open {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 20px;
+    color: var(--fg);
+  }
+  .open img {
+    height: 54px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+  .open b { color: var(--pink); }
+  .toggle {
+    width: 160px;
+    height: 54px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    flex: none;
+  }
+  .toggle img {
+    height: 54px;
+    border: 0;
+    border-radius: 0;
+  }
+  .panel {
+    width: 846px;
+    justify-self: end;
+    height: 300px;
+    padding-top: 22px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: #0e0f13;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+    position: relative;
+  }
+  .panel img {
+    display: block;
+    margin-top: -36px;
+    clip-path: inset(36px 0 0 0);
+    width: 860px;
+  }
+</style>
+</head>
+<body>
+  <div class="band">
+    <div>
+      <h1>Better Markdown<br><span>Preview</span></h1>
+      <p class="tagline">Read and edit Markdown in <em>one live view</em>, styled like your editor.</p>
+      <div class="open">
+        <span class="toggle"><img src="../images/view-toggle.png" alt=""></span>
+        <span>Open a <b>.md</b> file, then click <b>the first icon</b></span>
+      </div>
+    </div>
+    <div class="panel">
+      <img src="../Test/cover-panel.png" alt="">
+    </div>
+  </div>
+</body>
+</html>

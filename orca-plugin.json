@@ -3,8 +3,8 @@
   "manifestVersion": 2,
   "id": "better-markdown-preview",
   "name": "Better Markdown Preview",
-  "version": "1.0.0",
-  "description": "Read and edit Markdown in one live preview: colored headings, organized lists, clean tables, highlighted code, callouts, front matter and Mermaid diagrams.",
+  "version": "1.0.1",
+  "description": "Read and edit Markdown in one live preview: colored headings, organized lists, clean tables, highlighted code, callouts, front matter and Mermaid diagrams. To open it, open a .md file and click the first icon (the pen nib) in the editor's view toggle.",
   "author": {
     "name": "Sumonta Saha Mridul",
     "url": "https://github.com/Sumonta056"
@@ -18,7 +18,7 @@
   "pluginApi": 1,
   "cover": {
     "path": "images/cover.png",
-    "alt": "Better Markdown Preview showing colored headings, bullets with a shape per level, a tip callout and a task list"
+    "alt": "The plugin name, a hint to click the first icon in the view toggle, and a preview with a colored heading, bullets and a tip callout"
   },
   "screenshots": [
     {
