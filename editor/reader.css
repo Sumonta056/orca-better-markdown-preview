@@ -32,8 +32,9 @@
   --purple: #ab9df2;
 
   --code-bg: color-mix(in srgb, var(--bg) 70%, black);
-  --row-alt: color-mix(in srgb, var(--fg) 4%, transparent);
   --quote-fg: color-mix(in srgb, var(--fg) 85%, transparent);
+  --table-line: color-mix(in srgb, var(--fg) 16%, var(--bg));
+  --table-head: color-mix(in srgb, var(--fg) 5%, var(--bg));
   color-scheme: dark;
 }
 
@@ -403,8 +404,17 @@ body {
   width: fit-content;
   max-width: 100%;
   overflow-x: auto;
-  border: 1px solid var(--border);
+  border: 1px solid var(--table-line);
   border-radius: var(--radius);
+}
+
+.table-wrap:not(:has(th:nth-child(4))),
+.table-wrap:not(:has(th:nth-child(4))) table {
+  width: 100%;
+}
+
+.table-wrap:not(:has(th:nth-child(4))) td:first-child {
+  width: 1%;
 }
 
 .table-wrap table {
@@ -413,8 +423,14 @@ body {
   line-height: 1.5;
 }
 
+.table-wrap th,
+.table-wrap td {
+  padding: 0.7em 1.1em;
+  vertical-align: top;
+}
+
 .table-wrap thead th {
-  background: var(--surface);
+  background: var(--table-head);
   color: var(--yellow);
   font-size: 0.78em;
   font-weight: 700;
@@ -422,13 +438,13 @@ body {
   letter-spacing: 0.06em;
   text-align: left;
   white-space: nowrap;
-  border-bottom: 1px solid color-mix(in srgb, var(--yellow) 35%, transparent);
+  padding: calc(0.7em / 0.78) calc(1.1em / 0.78);
+  border-bottom: 1px solid color-mix(in srgb, var(--yellow) 45%, transparent);
 }
 
-.table-wrap th,
-.table-wrap td {
-  padding: 0.6em 1.1em;
-  vertical-align: top;
+.table-wrap th + th,
+.table-wrap td + td {
+  border-left: 1px solid var(--table-line);
 }
 
 .table-wrap td {
@@ -441,16 +457,12 @@ body {
   white-space: nowrap;
 }
 
-.table-wrap tbody tr:nth-child(even) {
-  background: var(--row-alt);
-}
-
 .table-wrap tbody tr + tr td {
-  border-top: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
+  border-top: 1px solid var(--table-line);
 }
 
 .table-wrap tbody tr:hover {
-  background: color-mix(in srgb, var(--blue) 7%, transparent);
+  background: color-mix(in srgb, var(--fg) 4%, transparent);
 }
 
 .table-wrap code {

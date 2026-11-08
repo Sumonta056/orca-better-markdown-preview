@@ -3,7 +3,7 @@
   "manifestVersion": 2,
   "id": "better-markdown-preview",
   "name": "Better Markdown Preview",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Read and edit Markdown in one live preview: colored headings, organized lists, clean tables, highlighted code, callouts, front matter and Mermaid diagrams. To open it, open a .md file and click the first icon (the pen nib) in the editor's view toggle.",
   "author": {
     "name": "Sumonta Saha Mridul",

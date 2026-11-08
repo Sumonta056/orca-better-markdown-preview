@@ -55,6 +55,13 @@ Orca opens Markdown files in Source first, and a plugin cannot change that. Clic
 - **No raw HTML.** HTML in the Markdown shows as text.
 - **Agent edits.** When an agent writes the file while you type, the preview keeps both changes if they touch different lines. If both change the same lines, the agent's version wins.
 
+## What's new in 1.0.3
+
+- Tables have a new look: a full grid with lines between all cells, a grey header band and yellow column names.
+- Tables with 3 columns or fewer fill the width of the text. Wider tables stay as wide as their content.
+- Column names now line up with the cells below them.
+- Table lines show clearly in every Orca theme.
+
 ## What's new in 1.0.2
 
 - A plugin icon: colored heading lines with a pen nib. Its source is `images/icon.svg`.
